@@ -1,16 +1,19 @@
-import type { NextRequest } from 'next/server';
+import { withAuth } from '@kinde-oss/kinde-auth-nextjs/middleware';
 
-export function middleware(request: NextRequest) {}
+export default function middleware(req: Request) {
+	return withAuth(req);
+}
 
 export const config = {
-  matcher: [
-    /*
-     * Match all request paths except for the ones starting with:
-     * - api (API routes)
-     * - _next/static (static files)
-     * - _next/image (image optimization files)
-     * - favicon.ico (favicon file)
-     */
-    '/((?!api|_next/static|_next/image|favicon.ico).*)',
-  ],
+	matcher: ['/protected'],
+	// matcher: [
+	// 	/*
+	// 	 * Match all request paths except for the ones starting with:
+	// 	 * - api (API routes)
+	// 	 * - _next/static (static files)
+	// 	 * - _next/image (image optimization files)
+	// 	 * - favicon.ico (favicon file)
+	// 	 */
+	// 	'/((?!api|_next/static|_next/image|favicon.ico).*)',
+	// ],
 };

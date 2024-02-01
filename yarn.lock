@@ -203,6 +203,33 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@kinde-oss/kinde-auth-nextjs@npm:^2.1.3":
+  version: 2.1.6
+  resolution: "@kinde-oss/kinde-auth-nextjs@npm:2.1.6"
+  dependencies:
+    "@kinde-oss/kinde-typescript-sdk": "npm:^2.6.2"
+    cookie: "npm:^0.5.0"
+    crypto-js: "npm:^4.1.1"
+    jwt-decode: "npm:^3.1.2"
+    uncrypto: "npm:^0.1.3"
+  peerDependencies:
+    next: ^12.2.5 || ^13 || ^14
+    react: ^18.1.0
+    react-dom: ^18.1.0
+  checksum: 5a5233282b7e88a80109480dbab106140cf3482b5bfc9790a44dac142ca68b53ebf8b96b667738c0181ed4bd43a0599c7296dd55cebe8becb8a575f67812b006
+  languageName: node
+  linkType: hard
+
+"@kinde-oss/kinde-typescript-sdk@npm:^2.6.2":
+  version: 2.6.2
+  resolution: "@kinde-oss/kinde-typescript-sdk@npm:2.6.2"
+  dependencies:
+    jwt-decode: "npm:^4.0.0"
+    uncrypto: "npm:^0.1.3"
+  checksum: 1ab8d11115c6f83792664bb534837fe375b8deef8ee69d44b0678a5f4872cb72e13e247b03752de5b99bfd2054382798bc1d47e694c724636fd3143e45f9f98b
+  languageName: node
+  linkType: hard
+
 "@mantine/core@npm:7.4.2":
   version: 7.4.2
   resolution: "@mantine/core@npm:7.4.2"
@@ -818,6 +845,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "birthdayy-dashboardv2@workspace:."
   dependencies:
+    "@kinde-oss/kinde-auth-nextjs": "npm:^2.1.3"
     "@mantine/core": "npm:7.4.2"
     "@mantine/hooks": "npm:7.4.2"
     "@types/node": "npm:20.8.10"
@@ -1028,6 +1056,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"cookie@npm:^0.5.0":
+  version: 0.5.0
+  resolution: "cookie@npm:0.5.0"
+  checksum: aae7911ddc5f444a9025fbd979ad1b5d60191011339bce48e555cb83343d0f98b865ff5c4d71fecdfb8555a5cafdc65632f6fce172f32aaf6936830a883a0380
+  languageName: node
+  linkType: hard
+
 "cross-spawn@npm:^7.0.0, cross-spawn@npm:^7.0.2":
   version: 7.0.3
   resolution: "cross-spawn@npm:7.0.3"
@@ -1036,6 +1071,13 @@ __metadata:
     shebang-command: "npm:^2.0.0"
     which: "npm:^2.0.1"
   checksum: e1a13869d2f57d974de0d9ef7acbf69dc6937db20b918525a01dacb5032129bd552d290d886d981e99f1b624cb03657084cc87bd40f115c07ecf376821c729ce
+  languageName: node
+  linkType: hard
+
+"crypto-js@npm:^4.1.1":
+  version: 4.2.0
+  resolution: "crypto-js@npm:4.2.0"
+  checksum: c7bcc56a6e01c3c397e95aa4a74e4241321f04677f9a618a8f48a63b5781617248afb9adb0629824792e7ec20ca0d4241a49b6b2938ae6f973ec4efc5c53c924
   languageName: node
   linkType: hard
 
@@ -2480,6 +2522,20 @@ __metadata:
     object.assign: "npm:^4.1.4"
     object.values: "npm:^1.1.6"
   checksum: b61d44613687dfe4cc8ad4b4fbf3711bf26c60b8d5ed1f494d723e0808415c59b24a7c0ed8ab10736a40ff84eef38cbbfb68b395e05d31117b44ffc59d31edfc
+  languageName: node
+  linkType: hard
+
+"jwt-decode@npm:^3.1.2":
+  version: 3.1.2
+  resolution: "jwt-decode@npm:3.1.2"
+  checksum: 20a4b072d44ce3479f42d0d2c8d3dabeb353081ba4982e40b83a779f2459a70be26441be6c160bfc8c3c6eadf9f6380a036fbb06ac5406b5674e35d8c4205eeb
+  languageName: node
+  linkType: hard
+
+"jwt-decode@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "jwt-decode@npm:4.0.0"
+  checksum: 87b569e4a9a0067fb0d592bcf3b2ac3e638e49beee28620eeb07bef1b4470f4077dea68c15d191dd68e076846c3af8394be3bcaecffedc6e97433b221fdbbcf3
   languageName: node
   linkType: hard
 
@@ -4129,6 +4185,13 @@ __metadata:
     has-symbols: "npm:^1.0.3"
     which-boxed-primitive: "npm:^1.0.2"
   checksum: 06e1ee41c1095e37281cb71a975cb3350f7cb470a0665d2576f02cc9564f623bd90cfc0183693b8a7fdf2d242963dcc3010b509fa3ac683f540c765c0f3e7e43
+  languageName: node
+  linkType: hard
+
+"uncrypto@npm:^0.1.3":
+  version: 0.1.3
+  resolution: "uncrypto@npm:0.1.3"
+  checksum: 0020f74b0ce34723196d8982a73bb7f40cff455a41b8f88ae146b86885f4e66e41a1241fe80a887505c3bd2c7f07ed362b6ed041968370073c40a98496e6a737
   languageName: node
   linkType: hard
 
